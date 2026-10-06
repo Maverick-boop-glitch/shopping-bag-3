@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Tas Belanja Lipat Motif Nusantara · Rp30.000 | Madebykain">
+<meta property="og:description" content="Tas belanja lipat ukuran besar, motif lukisan Nusantara. Jahitan rapi, bahan bagus. Rp30.000/pcs.">
+<meta property="og:image" content="images/og-image.jpg">
+<title>Madebykain Tas Belanja Lipat</title>
+<meta name="description" content="Tas belanja lipat bermotif lukisan Nusantara. Jahitan rapi, bahan bagus, ukuran besar. Hanya Rp30.000/pcs. Pesan via WhatsApp.">
+<!--
+  SEBELUM DIPASANG DI GOOGLE ADS:
+  2. Tempel Google Tag (gtag.js) dari Google Ads di sini, lalu isi GADS_SEND_TO di <script> bawah
+     agar setiap klik WhatsApp tercatat sebagai konversi.
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Plus+Jakarta+Sans:wght@400;500;700&display=swap">
+<style>
+/* Layout: halaman cerah satu kolom; pita langit senja (oranye-pink-kuning) dari lukisan motif sebagai pemisah, toska laut sebagai warna aksi */
+:root{
+  --sky:#f4faff; --surface:#ffffff; --ink:#1b2a4a; --muted:#56627a; --line:#d9e6f2;
+  --sunset:#f2662a; --pink:#f48bb3; --sun:#ffc93c; --sea:#0fa3b1; --deep:#1f4fa3; --mock:#cae6fb;
+  --wa:#17a34a;
+  --display:"Baloo 2", "Trebuchet MS", system-ui, sans-serif;
+  --body:"Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{background:var(--sky)}
+body{background:var(--sky);color:var(--ink);font:400 16px/1.6 var(--body);margin:0;padding-inline:16px;padding-block:0 96px}
+.wrap{max-width:1100px;margin-inline:auto}
+h1,h2,h3{font-family:var(--display);line-height:1.08;text-wrap:balance;margin:0;color:var(--ink)}
+h2{font-size:clamp(1.8rem,4.2vw,2.6rem);font-weight:800}
+h3{font-size:1.2rem;font-weight:700}
+p{margin:0}
+.eyebrow{font:700 .78rem/1 var(--body);letter-spacing:.1em;text-transform:uppercase;color:var(--sunset)}
+.lead{color:var(--muted);max-width:60ch;font-size:1.05rem}
+section{padding-block:64px;display:grid;gap:28px}
+.sunset-band{height:10px;border-radius:99px;background:linear-gradient(90deg,var(--deep),var(--sea) 25%,var(--sun) 50%,var(--sunset) 72%,var(--pink));opacity:.9}
+
+header{display:flex;justify-content:space-between;align-items:center;padding-block:18px;gap:12px}
+.logo{font:800 1.6rem/1 var(--display);color:var(--deep);text-decoration:none}
+.logo{display:block;line-height:0}
+.logo img{height:44px;width:auto;display:block}
+@media (max-width:560px){.logo img{height:34px}}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font:700 1rem/1 var(--body);padding:16px 24px;border-radius:999px;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .15s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
+.btn-wa{background:var(--wa);color:#fff;box-shadow:0 8px 20px -8px rgba(23,163,74,.6)}
+.btn-ghost{border-color:var(--deep);color:var(--deep);background:transparent}
+.btn-sm{padding:10px 16px;font-size:.9rem}
+.btn svg{width:20px;height:20px;flex:none}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;padding-block:28px 56px}
+.hero-copy{display:grid;gap:22px;min-width:0}
+.hero h1{font-size:clamp(2.4rem,6vw,4.1rem);font-weight:800}
+.hero h1 em{font-style:normal;background:linear-gradient(90deg,var(--sunset),var(--pink));-webkit-background-clip:text;background-clip:text;color:transparent}
+.price{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.price strong{font:800 2.6rem/1 var(--display);background:var(--sun);color:var(--ink);padding:8px 18px 4px;border-radius:14px;transform:rotate(-2deg);display:inline-block}
+.price small{color:var(--muted);font-size:.95rem}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.trust{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:.88rem;color:var(--muted);font-weight:500}
+.trust span::before{content:"✓ ";color:var(--sea);font-weight:700}
+
+.hero-visual{position:relative;min-width:0;aspect-ratio:1/1;max-width:100%}
+.hero-visual .art{position:absolute;inset:0 12% 18% 0;border-radius:28px;overflow:hidden;box-shadow:0 20px 40px -20px rgba(31,79,163,.45)}
+.hero-visual .art img{width:100%;height:100%;object-fit:cover;object-position:8% 50%;display:block}
+.hero-visual .mock{position:absolute;right:0;bottom:0;width:52%;aspect-ratio:4/5;border-radius:22px;overflow:hidden;border:5px solid var(--surface);box-shadow:0 18px 34px -14px rgba(27,42,74,.55)}
+.hero-visual .mock img{display:block;width:100%;height:100%;object-fit:cover}
+.hero-visual .badge{position:absolute;left:4%;bottom:6%;background:var(--sunset);color:#fff;font:800 1rem/1.1 var(--display);padding:12px 16px;border-radius:16px;transform:rotate(3deg);text-align:center}
+
+/* benefits */
+.benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.benefit{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px;display:grid;gap:10px;align-content:start;min-width:0}
+.benefit .ic{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;color:#fff}
+.benefit .ic svg{width:24px;height:24px}
+.benefit:nth-child(6n+1) .ic{background:var(--sea)}
+.benefit:nth-child(6n+2) .ic{background:var(--sunset)}
+.benefit:nth-child(6n+3) .ic{background:var(--deep)}
+.benefit:nth-child(6n+4) .ic{background:var(--pink)}
+.benefit:nth-child(6n+5) .ic{background:#e0a400}
+.benefit:nth-child(6n+6) .ic{background:var(--sea)}
+.benefit p{color:var(--muted);font-size:.95rem}
+
+/* fold strip */
+.fold{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;counter-reset:f}
+.fold div{background:linear-gradient(160deg,#e8f6ff,#fff2e8);border-radius:20px;padding:22px;display:grid;gap:6px;min-width:0}
+.fold b{font:800 1.4rem/1 var(--display);color:var(--deep)}
+.fold p{color:var(--muted);font-size:.95rem}
+
+/* gallery */
+.gallery{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.motif{margin:0;display:grid;gap:8px;min-width:0}
+.motif .frame{aspect-ratio:3/4;border-radius:16px;overflow:hidden;background:var(--line);border:3px solid var(--surface);box-shadow:0 10px 22px -14px rgba(27,42,74,.5)}
+.motif img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s ease}
+.motif:hover img{transform:scale(1.05)}
+.motif figcaption{font-weight:700;font-size:.92rem;display:flex;justify-content:space-between;gap:6px;align-items:center}
+.motif figcaption a{font-size:.78rem;font-weight:700;color:var(--wa);text-decoration:none;white-space:nowrap}
+
+/* price card */
+.offer{background:linear-gradient(120deg,var(--deep),var(--sea));color:#fff;border-radius:28px;padding:clamp(24px,5vw,48px);display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center}
+.offer h2{color:#fff}
+.offer .lead{color:#eaf6ff}
+.offer .eyebrow{color:var(--sun)}
+.offer-price{background:var(--surface);color:var(--ink);border-radius:22px;padding:24px;display:grid;gap:12px;text-align:center}
+.offer-price .amt{font:800 3rem/1 var(--display);color:var(--sunset)}
+.offer-price ul{list-style:none;margin:0;padding:0;display:grid;gap:4px;color:var(--muted);font-size:.93rem}
+
+/* steps */
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:16px;counter-reset:s}
+.steps li{counter-increment:s;display:grid;gap:8px;min-width:0;background:var(--surface);border-radius:20px;padding:22px;border:1px solid var(--line)}
+.steps li::before{content:counter(s);font:800 1.2rem/1 var(--display);width:42px;height:42px;border-radius:50%;background:var(--sun);color:var(--ink);display:grid;place-items:center}
+.steps p{color:var(--muted);font-size:.93rem}
+
+/* order form */
+.order{background:var(--surface);border:1px solid var(--line);border-radius:28px;padding:clamp(22px,5vw,44px);display:grid;grid-template-columns:1fr 1fr;gap:32px}
+form{display:grid;gap:14px;min-width:0}
+label{display:grid;gap:6px;font-weight:600;font-size:.9rem}
+input,select{font:inherit;padding:12px 14px;border-radius:12px;border:1.5px solid var(--line);background:var(--sky);color:var(--ink);width:100%}
+input:focus-visible,select:focus-visible{outline:3px solid var(--sea);outline-offset:1px}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.total{font:800 1.3rem/1.3 var(--display);background:#fff4d6;padding:12px 16px;border-radius:12px;color:var(--ink)}
+
+/* faq */
+.faq{display:grid;gap:10px;max-width:780px}
+details{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+summary{cursor:pointer;font-weight:700}
+details p{color:var(--muted);margin-top:10px}
+
+footer{padding-block:32px;color:var(--muted);font-size:.9rem;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+.sel{user-select:all;font-weight:700;color:var(--ink)}
+
+.sticky{position:fixed;left:0;right:0;bottom:0;padding:12px 16px calc(12px + env(safe-area-inset-bottom,0px));background:var(--surface);border-top:1px solid var(--line);display:none;gap:12px;align-items:center;z-index:10}
+.sticky .btn{flex:1}
+.sticky b{font:800 1.3rem/1 var(--display);color:var(--sunset)}
+
+@media (max-width:900px){
+  .hero,.offer,.order{grid-template-columns:1fr}
+  .gallery{grid-template-columns:repeat(3,1fr)}
+  .benefits{grid-template-columns:1fr 1fr}
+}
+@media (max-width:560px){
+  .benefits,.fold,.steps,.row2{grid-template-columns:1fr}
+  .gallery{grid-template-columns:1fr 1fr}
+  .sticky{display:flex}
+  section{padding-block:48px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="logo" href="#top" id="top"><img src="images/logo-madebykain.png" alt="Made by Kain" width="450" height="104"></a>
+    <a class="btn btn-ghost btn-sm js-wa" data-msg="Halo, saya mau tanya tas belanja lipat motif Nusantara." href="#">Chat WhatsApp</a>
+  </header>
+
+  <div class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">Tas belanja lipat · motif lukisan Nusantara</p>
+      <h1>Bawa Indonesia di setiap belanjaan, <em>lipat masuk saku.</em></h1>
+      <div class="price"><strong>Rp30.000</strong><small>per pcs<br>harga satuan, tanpa minimal order</small></div>
+      <p class="lead">Tas belanja lipat ukuran besar dengan motif lukisan cerah dari Labuan Bajo, Raja Ampat, Bromo, Borobudur dan banyak lagi. Jahitan rapi, bahan bagus, kuat dipakai belanja setiap minggu.</p>
+      <div class="ctas">
+        <a class="btn btn-wa js-wa" data-msg="Halo, saya mau pesan tas belanja lipat motif Nusantara (Rp30.000/pcs)." href="#"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>Pesan via WhatsApp</a>
+        <a class="btn btn-ghost" href="#motif">Lihat 10 motif</a>
+      </div>
+      <div class="trust"><span>Bisa dilipat kecil</span><span>Jahitan rapi</span><span>Kirim ke seluruh Indonesia</span></div>
+    </div>
+    <div class="hero-visual">
+      <div class="art"><img src="images/hero-labuan-bajo.jpg" alt="Lukisan motif Labuan Bajo: komodo dan kapal pinisi saat senja"></div>
+      <div class="mock"><img src="images/mockup-tas-labuan-bajo.jpg" alt="Lukisan motif Labuan Bajo: komodo dan kapal pinisi saat senja"></div>
+      <div class="badge">Cuma<br>Rp30rb</div>
+    </div>
+  </div>
+
+  <div class="sunset-band" aria-hidden="true"></div>
+
+  <section aria-labelledby="why">
+    <div><p class="eyebrow">Kenapa pilih tas ini</p><h2 id="why">Cantik dilihat, kuat dipakai, ringkas dibawa.</h2></div>
+    <div class="benefits">
+      <article class="benefit"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="5" width="14" height="14" rx="3"/><path d="M5 12h14M12 5v14"/></svg></div><h3>Bisa dilipat</h3><p>Lipat jadi kecil, simpan di tas, saku jaket, atau dashboard motor. Selalu siap saat belanja mendadak.</p></article>
+      <article class="benefit"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="8"/><path d="M8 14c2 2 6 2 8 0"/></svg></div><h3>Motif lukisan cerah</h3><p>10 motif lukisan destinasi Nusantara, dicetak penuh dengan warna hidup. Jadi pusat perhatian di mana pun.</p></article>
+      <article class="benefit"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="3 3"><path d="M4 7h16M4 12h16M4 17h16"/></svg></div><h3>Jahitan rapi</h3><p>Jahitan kuat di pegangan dan dasar tas, tidak mudah lepas walau diisi penuh.</p></article>
+      <article class="benefit"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16l-1.5 13h-13z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg></div><h3>Ukuran besar</h3><p>Muat belanjaan mingguan, sayur, buah, sampai perlengkapan bayi dalam satu tas.</p></article>
+      <article class="benefit"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3c4 4 6 7 6 10a6 6 0 0 1-12 0c0-3 2-6 6-10z"/></svg></div><h3>Bahan bagus</h3><p>Ringan tapi tidak tipis, bisa dicuci dan cepat kering.</p></article>
+      <article class="benefit"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 12a8 8 0 1 1-3-6.2"/><path d="M20 4v5h-5"/></svg></div><h3>Ganti kantong plastik</h3><p>Satu tas dipakai berulang kali. Lebih hemat dan lebih baik untuk lingkungan.</p></article>
+    </div>
+  </section>
+
+  <section aria-labelledby="fold" style="padding-top:0">
+    <div><p class="eyebrow">Tas lipat</p><h2 id="fold">Dari saku ke keranjang belanja dalam 3 detik.</h2></div>
+    <div class="fold">
+      <div><b>Terlipat</b><p>Ringkas seukuran dompet, enteng dibawa ke mana-mana.</p></div>
+      <div><b>Dibuka</b><p>Langsung jadi tas belanja besar dengan dua pegangan bahu.</p></div>
+      <div><b>Dipakai lagi</b><p>Selesai belanja, lipat kembali. Bisa dicuci kapan saja.</p></div>
+    </div>
+  </section>
+
+  <div class="sunset-band" aria-hidden="true"></div>
+
+  <section id="motif" aria-labelledby="motifs">
+    <div><p class="eyebrow">Pilih motif</p><h2 id="motifs">10 lukisan Nusantara, semuanya Rp30.000.</h2><p class="lead" style="margin-top:10px">Ketuk "Pesan" di bawah motif favorit Anda, pesan WhatsApp akan terisi otomatis.</p></div>
+    <div class="gallery">
+      <figure class="motif"><div class="frame"><img loading="lazy" src="images/motif/labuan-bajo.jpg" alt="Motif lukisan Labuan Bajo"></div><figcaption>Labuan Bajo<a class="js-wa" data-msg="Halo, saya mau pesan tas belanja lipat motif Labuan Bajo (Rp30.000/pcs)." href="#">Pesan</a></figcaption></figure>
+      <figure class="motif"><div class="frame"><img loading="lazy" src="images/motif/tarian-papua.jpg" alt="Motif lukisan Tarian Papua"></div><figcaption>Tarian Papua<a class="js-wa" data-msg="Halo, saya mau pesan tas belanja lipat motif Tarian Papua (Rp30.000/pcs)." href="#">Pesan</a></figcaption></figure>
+      <figure class="motif"><div class="frame"><img loading="lazy" src="images/motif/raja-ampat.jpg" alt="Motif lukisan Raja Ampat"></div><figcaption>Raja Ampat<a class="js-wa" data-msg="Halo, saya mau pesan tas belanja lipat motif Raja Ampat (Rp30.000/pcs)." href="#">Pesan</a></figcaption></figure>
+      <figure class="motif"><div class="frame"><img loading="lazy" src="images/motif/belitung.jpg" alt="Motif lukisan Belitung"></div><figcaption>Belitung<a class="js-wa" data-msg="Halo, saya mau pesan tas belanja lipat motif Belitung (Rp30.000/pcs)." href="#">Pesan</a></figcaption></figure>
+      <figure class="motif"><div class="frame"><img loading="lazy" src="images/motif/lumba-lumba-bawah-laut.jpg" alt="Motif lukisan Lumba-lumba &amp; Bawah Laut"></div><figcaption>Lumba-lumba &amp; Bawah Laut<a class="js-wa" data-msg="Halo, saya mau pesan tas belanja lipat motif Lumba-lumba &amp; Bawah Laut (Rp30.000/pcs)." href="#">Pesan</a></figcaption></figure>
+      <figure class="motif"><div class="frame"><img loading="lazy" src="images/motif/snorkeling-pantai.jpg" alt="Motif lukisan Snorkeling Pantai"></div><figcaption>Snorkeling Pantai<a class="js-wa" data-msg="Halo, saya mau pesan tas belanja lipat motif Snorkeling Pantai (Rp30.000/pcs)." href="#">Pesan</a></figcaption></figure>
+      <figure class="motif"><div class="frame"><img loading="lazy" src="images/motif/lombok.jpg" alt="Motif lukisan Lombok"></div><figcaption>Lombok<a class="js-wa" data-msg="Halo, saya mau pesan tas belanja lipat motif Lombok (Rp30.000/pcs)." href="#">Pesan</a></figcaption></figure>
+      <figure class="motif"><div class="frame"><img loading="lazy" src="images/motif/borobudur.jpg" alt="Motif lukisan Borobudur"></div><figcaption>Borobudur<a class="js-wa" data-msg="Halo, saya mau pesan tas belanja lipat motif Borobudur (Rp30.000/pcs)." href="#">Pesan</a></figcaption></figure>
+      <figure class="motif"><div class="frame"><img loading="lazy" src="images/motif/ondel-ondel-jakarta.jpg" alt="Motif lukisan Ondel-ondel Jakarta"></div><figcaption>Ondel-ondel Jakarta<a class="js-wa" data-msg="Halo, saya mau pesan tas belanja lipat motif Ondel-ondel Jakarta (Rp30.000/pcs)." href="#">Pesan</a></figcaption></figure>
+      <figure class="motif"><div class="frame"><img loading="lazy" src="images/motif/bromo.jpg" alt="Motif lukisan Bromo"></div><figcaption>Bromo<a class="js-wa" data-msg="Halo, saya mau pesan tas belanja lipat motif Bromo (Rp30.000/pcs)." href="#">Pesan</a></figcaption></figure>
+    </div>
+  </section>
+
+  <section aria-labelledby="offer">
+    <div class="offer">
+      <div style="display:grid;gap:14px;min-width:0">
+        <p class="eyebrow">Harga</p>
+        <h2 id="offer">Kualitas butik, harga Rp30.000.</h2>
+        <p class="lead">Satu harga untuk semua motif. Beli satu untuk dipakai sendiri, atau beberapa sekaligus untuk oleh-oleh dan hadiah.</p>
+      </div>
+      <div class="offer-price">
+        <span class="eyebrow">Per pcs</span>
+        <span class="amt">Rp30.000</span>
+        <ul><li>Semua 10 motif</li><li>Tanpa minimal order</li><li>Belum termasuk ongkir</li></ul>
+        <a class="btn btn-wa js-wa" data-msg="Halo, saya mau pesan tas belanja lipat motif Nusantara (Rp30.000/pcs)." href="#">Pesan sekarang</a>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="how">
+    <div><p class="eyebrow">Cara pesan</p><h2 id="how">Tiga langkah, tas sampai di rumah.</h2></div>
+    <ol class="steps">
+      <li><h3>Pilih motif</h3><p>Tentukan motif dan jumlah, lalu chat kami lewat WhatsApp.</p></li>
+      <li><h3>Konfirmasi &amp; bayar</h3><p>Kami kirim total harga plus ongkir ke alamat Anda.</p></li>
+      <li><h3>Tas dikirim</h3><p>Pesanan dikemas rapi dan dikirim, nomor resi dikabari lewat WhatsApp.</p></li>
+    </ol>
+  </section>
+
+  <section aria-labelledby="q">
+    <div class="order">
+      <div style="display:grid;gap:14px;align-content:start;min-width:0">
+        <p class="eyebrow">Pesan cepat</p>
+        <h2 id="q">Isi, lalu kirim ke WhatsApp.</h2>
+        <p class="lead">Total harga muncul otomatis. Pesan WhatsApp sudah tersusun, tinggal tekan kirim.</p>
+      </div>
+      <form id="orderForm" novalidate>
+        <label for="f-name">Nama<input id="f-name" placeholder="Nama Anda" autocomplete="name"></label>
+        <div class="row2">
+          <label for="f-motif">Motif<select id="f-motif"><option>Labuan Bajo</option><option>Tarian Papua</option><option>Raja Ampat</option><option>Belitung</option><option>Lumba-lumba &amp; Bawah Laut</option><option>Snorkeling Pantai</option><option>Lombok</option><option>Borobudur</option><option>Ondel-ondel Jakarta</option><option>Bromo</option></select></label>
+          <label for="f-qty">Jumlah (pcs)<input id="f-qty" type="number" min="1" value="2" inputmode="numeric"></label>
+        </div>
+        <label for="f-city">Kota pengiriman<input id="f-city" placeholder="Misal: Jakarta Selatan"></label>
+        <p class="total" id="total" aria-live="polite">Total: 2 × Rp30.000 = Rp60.000</p>
+        <button class="btn btn-wa" type="submit">Kirim pesanan ke WhatsApp</button>
+        <a id="wa-fallback" class="btn btn-ghost" href="#" target="_blank" rel="noopener" hidden>WhatsApp belum terbuka? Ketuk di sini</a>
+      </form>
+    </div>
+  </section>
+
+  <section aria-labelledby="faq">
+    <div><p class="eyebrow">Pertanyaan umum</p><h2 id="faq">Sebelum Anda pesan.</h2></div>
+    <div class="faq">
+      <details><summary>Harga Rp30.000 itu untuk berapa tas?</summary><p>Rp30.000 untuk satu tas, berlaku untuk semua motif. Tidak ada minimal order.</p></details>
+      <details><summary>Apakah tasnya benar-benar bisa dilipat?</summary><p>Ya. Tas bisa dilipat menjadi kecil sehingga mudah disimpan di tas, saku, atau kendaraan.</p></details>
+      <details><summary>Kuat untuk belanjaan berat?</summary><p>Ukurannya besar dan jahitannya rapi di bagian pegangan serta dasar, jadi kuat untuk belanja mingguan.</p></details>
+      <details><summary>Bisa dicuci?</summary><p>Bisa. Cuci dengan tangan atau mesin dengan putaran lembut, lalu jemur di tempat teduh agar warna motif tetap cerah.</p></details>
+      <details><summary>Pesan banyak untuk souvenir atau acara?</summary><p>Bisa. Chat kami via WhatsApp dengan jumlah dan tanggal yang dibutuhkan.</p></details>
+    </div>
+  </section>
+
+  <div class="sunset-band" aria-hidden="true"></div>
+  <footer>
+    <span>© 2026 Madebykain · Tas belanja lipat motif Nusantara</span>
+    <span>WhatsApp: <span class="sel">+62 813-1129-3656</span></span>
+  </footer>
+</div>
+
+<div class="sticky">
+  <div><small style="color:var(--muted)">Hanya</small><br><b>Rp30.000</b></div>
+  <a class="btn btn-wa js-wa" data-msg="Halo, saya mau pesan tas belanja lipat motif Nusantara (Rp30.000/pcs)." href="#">Pesan via WhatsApp</a>
+</div>
+
+<script>
+const WA_NUMBER = "6281311293656";
+const GADS_SEND_TO = "";   // isi dengan kode konversi Google Ads, contoh "AW-123456789/AbCdEf"
+const PRICE = 30000;
+
+const waUrl = m => "https://wa.me/" + WA_NUMBER + "?text=" + encodeURIComponent(m);
+const rp = n => "Rp" + Math.round(n).toLocaleString("id-ID");
+function track(){ try{ if(GADS_SEND_TO && typeof gtag==="function") gtag("event","conversion",{send_to:GADS_SEND_TO}); }catch(e){} }
+
+document.querySelectorAll(".js-wa").forEach(a=>{
+  a.href = waUrl(a.dataset.msg || "Halo");
+  a.target = "_blank"; a.rel = "noopener";
+  a.addEventListener("click", track);
+});
+
+const qty = document.getElementById("f-qty"), total = document.getElementById("total");
+function upd(){ const q=Math.max(1,parseInt(qty.value,10)||1); total.textContent="Total: "+q+" × "+rp(PRICE)+" = "+rp(q*PRICE); }
+qty.addEventListener("input", upd); upd();
+
+document.getElementById("orderForm").addEventListener("submit", e=>{
+  e.preventDefault();
+  const q=Math.max(1,parseInt(qty.value,10)||1);
+  const msg=["Halo, saya mau pesan tas belanja lipat.",
+    "Nama: "+(document.getElementById("f-name").value||"-"),
+    "Motif: "+document.getElementById("f-motif").value,
+    "Jumlah: "+q+" pcs",
+    "Kota: "+(document.getElementById("f-city").value||"-"),
+    total.textContent+" (belum ongkir)"].join("\n");
+  const url=waUrl(msg), fb=document.getElementById("wa-fallback");
+  fb.href=url; fb.hidden=false; track();
+  try{ window.open(url,"_blank","noopener"); }catch(err){}
+});
+</script>
+
+</body>
+</html>
