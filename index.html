@@ -5,11 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Tas Belanja Lipat Motif Nusantara · Rp30.000 | Madebykain">
-<meta property="og:description" content="Tas belanja lipat ukuran besar, motif lukisan Nusantara. Jahitan rapi, bahan bagus. Rp30.000/pcs.">
+<meta property="og:title" content="Tas Belanja Lipat Madebykain · Rp30.000/pcs">
+<meta property="og:description" content="Bisa dilipat, ukuran besar, jahitan rapi, bahan bagus. 10 motif lukisan Nusantara. Tanpa minimal order.">
 <meta property="og:image" content="images/og-image.jpg">
-<title>Madebykain Tas Belanja Lipat</title>
-<meta name="description" content="Tas belanja lipat bermotif lukisan Nusantara. Jahitan rapi, bahan bagus, ukuran besar. Hanya Rp30.000/pcs. Pesan via WhatsApp.">
+<title>Tas Belanja Lipat Madebykain</title>
+<meta name="description" content="Tas Belanja Lipat Madebykain: bisa dilipat, ukuran besar, jahitan rapi, bahan bagus. 10 motif lukisan Nusantara. Rp30.000/pcs, tanpa minimal order.">
 <!--
   SEBELUM DIPASANG DI GOOGLE ADS:
   2. Tempel Google Tag (gtag.js) dari Google Ads di sini, lalu isi GADS_SEND_TO di <script> bawah
@@ -48,7 +48,7 @@ header{display:flex;justify-content:space-between;align-items:center;padding-blo
 .logo img{height:44px;width:auto;display:block}
 @media (max-width:560px){.logo img{height:34px}}
 
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font:700 1rem/1 var(--body);padding:16px 24px;border-radius:999px;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .15s ease}
+.btn{white-space:nowrap;display:inline-flex;align-items:center;justify-content:center;gap:10px;font:700 1rem/1 var(--body);padding:16px 24px;border-radius:999px;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .15s ease}
 .btn:hover{transform:translateY(-2px)}
 .btn:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
 .btn-wa{background:var(--wa);color:#fff;box-shadow:0 8px 20px -8px rgba(23,163,74,.6)}
@@ -62,7 +62,7 @@ header{display:flex;justify-content:space-between;align-items:center;padding-blo
 .hero h1{font-size:clamp(2.4rem,6vw,4.1rem);font-weight:800}
 .hero h1 em{font-style:normal;background:linear-gradient(90deg,var(--sunset),var(--pink));-webkit-background-clip:text;background-clip:text;color:transparent}
 .price{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
-.price strong{font:800 2.6rem/1 var(--display);background:var(--sun);color:var(--ink);padding:8px 18px 4px;border-radius:14px;transform:rotate(-2deg);display:inline-block}
+.price strong{font:800 clamp(2rem,5vw,2.6rem)/1 var(--display);background:var(--sun);color:var(--ink);padding:8px 18px 4px;border-radius:14px;transform:rotate(-2deg);display:inline-block}
 .price small{color:var(--muted);font-size:.95rem}
 .ctas{display:flex;flex-wrap:wrap;gap:12px}
 .trust{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:.88rem;color:var(--muted);font-weight:500}
@@ -78,14 +78,8 @@ header{display:flex;justify-content:space-between;align-items:center;padding-blo
 /* benefits */
 .benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 .benefit{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px;display:grid;gap:10px;align-content:start;min-width:0}
-.benefit .ic{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;color:#fff}
+.benefit .ic{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;color:#fff;background:var(--sea)}
 .benefit .ic svg{width:24px;height:24px}
-.benefit:nth-child(6n+1) .ic{background:var(--sea)}
-.benefit:nth-child(6n+2) .ic{background:var(--sunset)}
-.benefit:nth-child(6n+3) .ic{background:var(--deep)}
-.benefit:nth-child(6n+4) .ic{background:var(--pink)}
-.benefit:nth-child(6n+5) .ic{background:#e0a400}
-.benefit:nth-child(6n+6) .ic{background:var(--sea)}
 .benefit p{color:var(--muted);font-size:.95rem}
 
 /* fold strip */
@@ -94,14 +88,21 @@ header{display:flex;justify-content:space-between;align-items:center;padding-blo
 .fold b{font:800 1.4rem/1 var(--display);color:var(--deep)}
 .fold p{color:var(--muted);font-size:.95rem}
 
+.real{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.real figure{margin:0;display:grid;gap:8px;min-width:0}
+.real .frame{aspect-ratio:3/4;border-radius:20px;overflow:hidden;border:3px solid var(--surface);box-shadow:0 10px 22px -14px rgba(27,42,74,.5);background:var(--line)}
+.real img{width:100%;height:100%;object-fit:cover;display:block}
+.real figcaption{font-weight:700;font-size:.95rem}
+@media (max-width:560px){.real{grid-template-columns:1fr}}
 /* gallery */
 .gallery{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
 .motif{margin:0;display:grid;gap:8px;min-width:0}
 .motif .frame{aspect-ratio:3/4;border-radius:16px;overflow:hidden;background:var(--line);border:3px solid var(--surface);box-shadow:0 10px 22px -14px rgba(27,42,74,.5)}
 .motif img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s ease}
 .motif:hover img{transform:scale(1.05)}
-.motif figcaption{font-weight:700;font-size:.92rem;display:flex;justify-content:space-between;gap:6px;align-items:center}
-.motif figcaption a{font-size:.78rem;font-weight:700;color:var(--wa);text-decoration:none;white-space:nowrap}
+.motif figcaption{font-weight:700;font-size:.95rem;display:grid;gap:8px}
+.motif figcaption .btn{padding:10px 12px;font-size:.82rem;gap:6px}
+.motif figcaption .btn svg{width:16px;height:16px}
 
 /* price card */
 .offer{background:linear-gradient(120deg,var(--deep),var(--sea));color:#fff;border-radius:28px;padding:clamp(24px,5vw,48px);display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center}
@@ -109,7 +110,7 @@ header{display:flex;justify-content:space-between;align-items:center;padding-blo
 .offer .lead{color:#eaf6ff}
 .offer .eyebrow{color:var(--sun)}
 .offer-price{background:var(--surface);color:var(--ink);border-radius:22px;padding:24px;display:grid;gap:12px;text-align:center}
-.offer-price .amt{font:800 3rem/1 var(--display);color:var(--sunset)}
+.offer-price .amt{font:800 clamp(2rem,5vw,2.6rem)/1 var(--display);color:var(--sunset)}
 .offer-price ul{list-style:none;margin:0;padding:0;display:grid;gap:4px;color:var(--muted);font-size:.93rem}
 
 /* steps */
@@ -149,6 +150,9 @@ footer{padding-block:32px;color:var(--muted);font-size:.9rem;display:flex;flex-w
   .benefits,.fold,.steps,.row2{grid-template-columns:1fr}
   .gallery{grid-template-columns:1fr 1fr}
   .sticky{display:flex}
+  header .btn{display:none}
+  .sticky .btn{padding:14px 12px;font-size:.88rem;min-width:0}
+  .sticky b{font-size:1.1rem}
   section{padding-block:48px}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
@@ -158,67 +162,69 @@ footer{padding-block:32px;color:var(--muted);font-size:.9rem;display:flex;flex-w
 <body>
 <div class="wrap">
   <header>
-    <a class="logo" href="#top" id="top"><img src="images/logo-madebykain.png" alt="Made by Kain" width="450" height="104"></a>
-    <a class="btn btn-ghost btn-sm js-wa" data-msg="Halo, saya mau tanya tas belanja lipat motif Nusantara." href="#">Chat WhatsApp</a>
+    <a class="logo" href="#top" id="top"><img src="images/logo-madebykain.png" alt="Madebykain" width="450" height="104"></a>
+    <a class="btn btn-wa btn-sm js-wa" data-msg="Halo Madebykain, saya mau pesan Tas Belanja Lipat (Rp30.000/pcs)." href="#"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>Pesan via WhatsApp</a>
   </header>
 
   <div class="hero">
     <div class="hero-copy">
-      <p class="eyebrow">Tas belanja lipat · motif lukisan Nusantara</p>
-      <h1>Bawa Indonesia di setiap belanjaan, <em>lipat masuk saku.</em></h1>
-      <div class="price"><strong>Rp30.000</strong><small>per pcs<br>harga satuan, tanpa minimal order</small></div>
-      <p class="lead">Tas belanja lipat ukuran besar dengan motif lukisan cerah dari Labuan Bajo, Raja Ampat, Bromo, Borobudur dan banyak lagi. Jahitan rapi, bahan bagus, kuat dipakai belanja setiap minggu.</p>
+      <p class="eyebrow">Madebykain</p>
+      <h1>Tas Belanja Lipat <em>motif lukisan Nusantara</em></h1>
+      <div class="price"><strong>Rp30.000/pcs</strong><small>Satu harga untuk semua motif.<br>Tanpa minimal order.</small></div>
+      <p class="lead">Tas Belanja Lipat Madebykain: ukuran besar, jahitan rapi, bahan bagus, dengan 10 motif lukisan Nusantara.</p>
       <div class="ctas">
-        <a class="btn btn-wa js-wa" data-msg="Halo, saya mau pesan tas belanja lipat motif Nusantara (Rp30.000/pcs)." href="#"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>Pesan via WhatsApp</a>
+        <a class="btn btn-wa js-wa" data-msg="Halo Madebykain, saya mau pesan Tas Belanja Lipat (Rp30.000/pcs)." href="#"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>Pesan via WhatsApp</a>
         <a class="btn btn-ghost" href="#motif">Lihat 10 motif</a>
       </div>
-      <div class="trust"><span>Bisa dilipat kecil</span><span>Jahitan rapi</span><span>Kirim ke seluruh Indonesia</span></div>
+      <div class="trust"><span>Bisa dilipat</span><span>Ukuran besar</span><span>Jahitan rapi</span><span>Bahan bagus</span></div>
     </div>
     <div class="hero-visual">
-      <div class="art"><img src="images/hero-labuan-bajo.jpg" alt="Lukisan motif Labuan Bajo: komodo dan kapal pinisi saat senja"></div>
-      <div class="mock"><img src="images/mockup-tas-labuan-bajo.jpg" alt="Lukisan motif Labuan Bajo: komodo dan kapal pinisi saat senja"></div>
-      <div class="badge">Cuma<br>Rp30rb</div>
+      <div class="art"><img src="images/hero-labuan-bajo.jpg" alt="Motif Labuan Bajo"></div>
+      <div class="mock"><img src="images/mockup-tas-labuan-bajo.jpg" alt="Tas Belanja Lipat motif Labuan Bajo"></div>
+      <div class="badge">Rp30.000/pcs</div>
     </div>
   </div>
 
   <div class="sunset-band" aria-hidden="true"></div>
 
   <section aria-labelledby="why">
-    <div><p class="eyebrow">Kenapa pilih tas ini</p><h2 id="why">Cantik dilihat, kuat dipakai, ringkas dibawa.</h2></div>
+    <div><p class="eyebrow">Keunggulan</p><h2 id="why">Kenapa Tas Belanja Lipat Madebykain?</h2></div>
     <div class="benefits">
-      <article class="benefit"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="5" width="14" height="14" rx="3"/><path d="M5 12h14M12 5v14"/></svg></div><h3>Bisa dilipat</h3><p>Lipat jadi kecil, simpan di tas, saku jaket, atau dashboard motor. Selalu siap saat belanja mendadak.</p></article>
-      <article class="benefit"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="8"/><path d="M8 14c2 2 6 2 8 0"/></svg></div><h3>Motif lukisan cerah</h3><p>10 motif lukisan destinasi Nusantara, dicetak penuh dengan warna hidup. Jadi pusat perhatian di mana pun.</p></article>
-      <article class="benefit"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="3 3"><path d="M4 7h16M4 12h16M4 17h16"/></svg></div><h3>Jahitan rapi</h3><p>Jahitan kuat di pegangan dan dasar tas, tidak mudah lepas walau diisi penuh.</p></article>
-      <article class="benefit"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16l-1.5 13h-13z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg></div><h3>Ukuran besar</h3><p>Muat belanjaan mingguan, sayur, buah, sampai perlengkapan bayi dalam satu tas.</p></article>
-      <article class="benefit"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3c4 4 6 7 6 10a6 6 0 0 1-12 0c0-3 2-6 6-10z"/></svg></div><h3>Bahan bagus</h3><p>Ringan tapi tidak tipis, bisa dicuci dan cepat kering.</p></article>
-      <article class="benefit"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 12a8 8 0 1 1-3-6.2"/><path d="M20 4v5h-5"/></svg></div><h3>Ganti kantong plastik</h3><p>Satu tas dipakai berulang kali. Lebih hemat dan lebih baik untuk lingkungan.</p></article>
+      <article class="benefit"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="5" width="14" height="14" rx="3"/><path d="M5 12h14M12 5v14"/></svg></div><h3>Bisa dilipat</h3><p>Dilipat kecil, masuk saku atau tas. Selalu siap dibawa belanja.</p></article>
+      <article class="benefit"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16l-1.5 13h-13z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg></div><h3>Ukuran besar</h3><p>Muat banyak belanjaan dalam satu tas.</p></article>
+      <article class="benefit"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16" stroke-dasharray="3 3"/></svg></div><h3>Jahitan rapi</h3><p>Jahitan rapi dan kuat di pegangan dan dasar tas.</p></article>
+      <article class="benefit"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3c4 4 6 7 6 10a6 6 0 0 1-12 0c0-3 2-6 6-10z"/></svg></div><h3>Bahan bagus</h3><p>Ringan, tidak tipis, dan bisa dicuci.</p></article>
+      <article class="benefit"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="8"/><path d="M8 14c2 2 6 2 8 0"/></svg></div><h3>10 motif lukisan Nusantara</h3><p>Dari Labuan Bajo sampai Bromo. Cocok untuk oleh-oleh dan souvenir khas Indonesia.</p></article>
+      <article class="benefit"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="1.5"/><circle cx="17" cy="18" r="1.5"/></svg></div><h3>Kirim ke seluruh Indonesia</h3><p>Pesan via WhatsApp, tas dikirim ke alamat Anda.</p></article>
     </div>
   </section>
 
-  <section aria-labelledby="fold" style="padding-top:0">
-    <div><p class="eyebrow">Tas lipat</p><h2 id="fold">Dari saku ke keranjang belanja dalam 3 detik.</h2></div>
-    <div class="fold">
-      <div><b>Terlipat</b><p>Ringkas seukuran dompet, enteng dibawa ke mana-mana.</p></div>
-      <div><b>Dibuka</b><p>Langsung jadi tas belanja besar dengan dua pegangan bahu.</p></div>
-      <div><b>Dipakai lagi</b><p>Selesai belanja, lipat kembali. Bisa dicuci kapan saja.</p></div>
+  <div class="sunset-band" aria-hidden="true"></div>
+
+  <section id="foto" aria-labelledby="real">
+    <div><p class="eyebrow">Foto asli</p><h2 id="real">Foto asli Tas Belanja Lipat</h2><p class="lead" style="margin-top:10px">Foto produk asli, motif Labuan Bajo.</p></div>
+    <div class="real">
+      <figure><div class="frame"><img loading="lazy" src="images/foto-asli-dipakai.jpg" alt="Foto asli Tas Belanja Lipat motif Labuan Bajo, dipakai"></div><figcaption>Dipakai</figcaption></figure>
+      <figure><div class="frame"><img loading="lazy" src="images/foto-asli-tampak-depan.jpg" alt="Foto asli Tas Belanja Lipat motif Labuan Bajo, tampak depan"></div><figcaption>Tampak depan</figcaption></figure>
+      <figure><div class="frame"><img loading="lazy" src="images/foto-asli-tampak-belakang.jpg" alt="Foto asli Tas Belanja Lipat motif Labuan Bajo, tampak belakang"></div><figcaption>Tampak belakang</figcaption></figure>
     </div>
   </section>
 
   <div class="sunset-band" aria-hidden="true"></div>
 
   <section id="motif" aria-labelledby="motifs">
-    <div><p class="eyebrow">Pilih motif</p><h2 id="motifs">10 lukisan Nusantara, semuanya Rp30.000.</h2><p class="lead" style="margin-top:10px">Ketuk "Pesan" di bawah motif favorit Anda, pesan WhatsApp akan terisi otomatis.</p></div>
+    <div><p class="eyebrow">Motif</p><h2 id="motifs">10 motif lukisan Nusantara</h2><p class="lead" style="margin-top:10px">Semua motif Rp30.000/pcs. Pilih motif, lalu tekan Pesan via WhatsApp.</p></div>
     <div class="gallery">
-      <figure class="motif"><div class="frame"><img loading="lazy" src="images/motif/labuan-bajo.jpg" alt="Motif lukisan Labuan Bajo"></div><figcaption>Labuan Bajo<a class="js-wa" data-msg="Halo, saya mau pesan tas belanja lipat motif Labuan Bajo (Rp30.000/pcs)." href="#">Pesan</a></figcaption></figure>
-      <figure class="motif"><div class="frame"><img loading="lazy" src="images/motif/tarian-papua.jpg" alt="Motif lukisan Tarian Papua"></div><figcaption>Tarian Papua<a class="js-wa" data-msg="Halo, saya mau pesan tas belanja lipat motif Tarian Papua (Rp30.000/pcs)." href="#">Pesan</a></figcaption></figure>
-      <figure class="motif"><div class="frame"><img loading="lazy" src="images/motif/raja-ampat.jpg" alt="Motif lukisan Raja Ampat"></div><figcaption>Raja Ampat<a class="js-wa" data-msg="Halo, saya mau pesan tas belanja lipat motif Raja Ampat (Rp30.000/pcs)." href="#">Pesan</a></figcaption></figure>
-      <figure class="motif"><div class="frame"><img loading="lazy" src="images/motif/belitung.jpg" alt="Motif lukisan Belitung"></div><figcaption>Belitung<a class="js-wa" data-msg="Halo, saya mau pesan tas belanja lipat motif Belitung (Rp30.000/pcs)." href="#">Pesan</a></figcaption></figure>
-      <figure class="motif"><div class="frame"><img loading="lazy" src="images/motif/lumba-lumba-bawah-laut.jpg" alt="Motif lukisan Lumba-lumba &amp; Bawah Laut"></div><figcaption>Lumba-lumba &amp; Bawah Laut<a class="js-wa" data-msg="Halo, saya mau pesan tas belanja lipat motif Lumba-lumba &amp; Bawah Laut (Rp30.000/pcs)." href="#">Pesan</a></figcaption></figure>
-      <figure class="motif"><div class="frame"><img loading="lazy" src="images/motif/snorkeling-pantai.jpg" alt="Motif lukisan Snorkeling Pantai"></div><figcaption>Snorkeling Pantai<a class="js-wa" data-msg="Halo, saya mau pesan tas belanja lipat motif Snorkeling Pantai (Rp30.000/pcs)." href="#">Pesan</a></figcaption></figure>
-      <figure class="motif"><div class="frame"><img loading="lazy" src="images/motif/lombok.jpg" alt="Motif lukisan Lombok"></div><figcaption>Lombok<a class="js-wa" data-msg="Halo, saya mau pesan tas belanja lipat motif Lombok (Rp30.000/pcs)." href="#">Pesan</a></figcaption></figure>
-      <figure class="motif"><div class="frame"><img loading="lazy" src="images/motif/borobudur.jpg" alt="Motif lukisan Borobudur"></div><figcaption>Borobudur<a class="js-wa" data-msg="Halo, saya mau pesan tas belanja lipat motif Borobudur (Rp30.000/pcs)." href="#">Pesan</a></figcaption></figure>
-      <figure class="motif"><div class="frame"><img loading="lazy" src="images/motif/ondel-ondel-jakarta.jpg" alt="Motif lukisan Ondel-ondel Jakarta"></div><figcaption>Ondel-ondel Jakarta<a class="js-wa" data-msg="Halo, saya mau pesan tas belanja lipat motif Ondel-ondel Jakarta (Rp30.000/pcs)." href="#">Pesan</a></figcaption></figure>
-      <figure class="motif"><div class="frame"><img loading="lazy" src="images/motif/bromo.jpg" alt="Motif lukisan Bromo"></div><figcaption>Bromo<a class="js-wa" data-msg="Halo, saya mau pesan tas belanja lipat motif Bromo (Rp30.000/pcs)." href="#">Pesan</a></figcaption></figure>
+      <figure class="motif"><div class="frame"><img loading="lazy" src="images/motif/labuan-bajo.jpg" alt="Motif Labuan Bajo"></div><figcaption>Labuan Bajo<a class="btn btn-wa js-wa" data-msg="Halo Madebykain, saya mau pesan Tas Belanja Lipat motif Labuan Bajo (Rp30.000/pcs)." href="#"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>Pesan via WhatsApp</a></figcaption></figure>
+      <figure class="motif"><div class="frame"><img loading="lazy" src="images/motif/tarian-papua.jpg" alt="Motif Tarian Papua"></div><figcaption>Tarian Papua<a class="btn btn-wa js-wa" data-msg="Halo Madebykain, saya mau pesan Tas Belanja Lipat motif Tarian Papua (Rp30.000/pcs)." href="#"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>Pesan via WhatsApp</a></figcaption></figure>
+      <figure class="motif"><div class="frame"><img loading="lazy" src="images/motif/raja-ampat.jpg" alt="Motif Raja Ampat"></div><figcaption>Raja Ampat<a class="btn btn-wa js-wa" data-msg="Halo Madebykain, saya mau pesan Tas Belanja Lipat motif Raja Ampat (Rp30.000/pcs)." href="#"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>Pesan via WhatsApp</a></figcaption></figure>
+      <figure class="motif"><div class="frame"><img loading="lazy" src="images/motif/belitung.jpg" alt="Motif Belitung"></div><figcaption>Belitung<a class="btn btn-wa js-wa" data-msg="Halo Madebykain, saya mau pesan Tas Belanja Lipat motif Belitung (Rp30.000/pcs)." href="#"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>Pesan via WhatsApp</a></figcaption></figure>
+      <figure class="motif"><div class="frame"><img loading="lazy" src="images/motif/lumba-lumba-bawah-laut.jpg" alt="Motif Lumba-lumba &amp; Bawah Laut"></div><figcaption>Lumba-lumba &amp; Bawah Laut<a class="btn btn-wa js-wa" data-msg="Halo Madebykain, saya mau pesan Tas Belanja Lipat motif Lumba-lumba &amp; Bawah Laut (Rp30.000/pcs)." href="#"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>Pesan via WhatsApp</a></figcaption></figure>
+      <figure class="motif"><div class="frame"><img loading="lazy" src="images/motif/snorkeling-pantai.jpg" alt="Motif Snorkeling Pantai"></div><figcaption>Snorkeling Pantai<a class="btn btn-wa js-wa" data-msg="Halo Madebykain, saya mau pesan Tas Belanja Lipat motif Snorkeling Pantai (Rp30.000/pcs)." href="#"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>Pesan via WhatsApp</a></figcaption></figure>
+      <figure class="motif"><div class="frame"><img loading="lazy" src="images/motif/lombok.jpg" alt="Motif Lombok"></div><figcaption>Lombok<a class="btn btn-wa js-wa" data-msg="Halo Madebykain, saya mau pesan Tas Belanja Lipat motif Lombok (Rp30.000/pcs)." href="#"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>Pesan via WhatsApp</a></figcaption></figure>
+      <figure class="motif"><div class="frame"><img loading="lazy" src="images/motif/borobudur.jpg" alt="Motif Borobudur"></div><figcaption>Borobudur<a class="btn btn-wa js-wa" data-msg="Halo Madebykain, saya mau pesan Tas Belanja Lipat motif Borobudur (Rp30.000/pcs)." href="#"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>Pesan via WhatsApp</a></figcaption></figure>
+      <figure class="motif"><div class="frame"><img loading="lazy" src="images/motif/ondel-ondel-jakarta.jpg" alt="Motif Ondel-ondel Jakarta"></div><figcaption>Ondel-ondel Jakarta<a class="btn btn-wa js-wa" data-msg="Halo Madebykain, saya mau pesan Tas Belanja Lipat motif Ondel-ondel Jakarta (Rp30.000/pcs)." href="#"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>Pesan via WhatsApp</a></figcaption></figure>
+      <figure class="motif"><div class="frame"><img loading="lazy" src="images/motif/bromo.jpg" alt="Motif Bromo"></div><figcaption>Bromo<a class="btn btn-wa js-wa" data-msg="Halo Madebykain, saya mau pesan Tas Belanja Lipat motif Bromo (Rp30.000/pcs)." href="#"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>Pesan via WhatsApp</a></figcaption></figure>
     </div>
   </section>
 
@@ -226,69 +232,69 @@ footer{padding-block:32px;color:var(--muted);font-size:.9rem;display:flex;flex-w
     <div class="offer">
       <div style="display:grid;gap:14px;min-width:0">
         <p class="eyebrow">Harga</p>
-        <h2 id="offer">Kualitas butik, harga Rp30.000.</h2>
-        <p class="lead">Satu harga untuk semua motif. Beli satu untuk dipakai sendiri, atau beberapa sekaligus untuk oleh-oleh dan hadiah.</p>
+        <h2 id="offer">Rp30.000/pcs untuk semua motif</h2>
+        <p class="lead">Tanpa minimal order. Ongkir dihitung sesuai alamat Anda.</p>
       </div>
       <div class="offer-price">
-        <span class="eyebrow">Per pcs</span>
-        <span class="amt">Rp30.000</span>
-        <ul><li>Semua 10 motif</li><li>Tanpa minimal order</li><li>Belum termasuk ongkir</li></ul>
-        <a class="btn btn-wa js-wa" data-msg="Halo, saya mau pesan tas belanja lipat motif Nusantara (Rp30.000/pcs)." href="#">Pesan sekarang</a>
+        <span class="eyebrow">Tas Belanja Lipat</span>
+        <span class="amt">Rp30.000/pcs</span>
+        <ul><li>10 motif lukisan Nusantara</li><li>Tanpa minimal order</li><li>Kirim ke seluruh Indonesia</li></ul>
+        <a class="btn btn-wa js-wa" data-msg="Halo Madebykain, saya mau pesan Tas Belanja Lipat (Rp30.000/pcs)." href="#"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>Pesan via WhatsApp</a>
       </div>
     </div>
   </section>
 
   <section aria-labelledby="how">
-    <div><p class="eyebrow">Cara pesan</p><h2 id="how">Tiga langkah, tas sampai di rumah.</h2></div>
+    <div><p class="eyebrow">Cara pesan</p><h2 id="how">Cara pesan Tas Belanja Lipat</h2></div>
     <ol class="steps">
-      <li><h3>Pilih motif</h3><p>Tentukan motif dan jumlah, lalu chat kami lewat WhatsApp.</p></li>
-      <li><h3>Konfirmasi &amp; bayar</h3><p>Kami kirim total harga plus ongkir ke alamat Anda.</p></li>
-      <li><h3>Tas dikirim</h3><p>Pesanan dikemas rapi dan dikirim, nomor resi dikabari lewat WhatsApp.</p></li>
+      <li><h3>Pilih motif</h3><p>Pilih motif dan jumlah, lalu tekan Pesan via WhatsApp.</p></li>
+      <li><h3>Konfirmasi &amp; bayar</h3><p>Kami kirim total harga dan ongkir lewat WhatsApp.</p></li>
+      <li><h3>Tas dikirim</h3><p>Tas dikirim ke alamat Anda. Nomor resi dikirim lewat WhatsApp.</p></li>
     </ol>
   </section>
 
-  <section aria-labelledby="q">
+  <section id="pesan" aria-labelledby="q">
     <div class="order">
       <div style="display:grid;gap:14px;align-content:start;min-width:0">
-        <p class="eyebrow">Pesan cepat</p>
-        <h2 id="q">Isi, lalu kirim ke WhatsApp.</h2>
-        <p class="lead">Total harga muncul otomatis. Pesan WhatsApp sudah tersusun, tinggal tekan kirim.</p>
+        <p class="eyebrow">Pesan</p>
+        <h2 id="q">Pesan via WhatsApp</h2>
+        <p class="lead">Isi motif dan jumlah. Total harga muncul otomatis, lalu tekan Pesan via WhatsApp.</p>
       </div>
       <form id="orderForm" novalidate>
         <label for="f-name">Nama<input id="f-name" placeholder="Nama Anda" autocomplete="name"></label>
         <div class="row2">
           <label for="f-motif">Motif<select id="f-motif"><option>Labuan Bajo</option><option>Tarian Papua</option><option>Raja Ampat</option><option>Belitung</option><option>Lumba-lumba &amp; Bawah Laut</option><option>Snorkeling Pantai</option><option>Lombok</option><option>Borobudur</option><option>Ondel-ondel Jakarta</option><option>Bromo</option></select></label>
-          <label for="f-qty">Jumlah (pcs)<input id="f-qty" type="number" min="1" value="2" inputmode="numeric"></label>
+          <label for="f-qty">Jumlah (pcs)<input id="f-qty" type="number" min="1" value="1" inputmode="numeric"></label>
         </div>
-        <label for="f-city">Kota pengiriman<input id="f-city" placeholder="Misal: Jakarta Selatan"></label>
-        <p class="total" id="total" aria-live="polite">Total: 2 × Rp30.000 = Rp60.000</p>
-        <button class="btn btn-wa" type="submit">Kirim pesanan ke WhatsApp</button>
+        <label for="f-city">Kota pengiriman<input id="f-city" placeholder="Contoh: Jakarta Selatan"></label>
+        <p class="total" id="total" aria-live="polite">Total: 1 × Rp30.000 = Rp30.000</p>
+        <button class="btn btn-wa" type="submit"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>Pesan via WhatsApp</button>
         <a id="wa-fallback" class="btn btn-ghost" href="#" target="_blank" rel="noopener" hidden>WhatsApp belum terbuka? Ketuk di sini</a>
       </form>
     </div>
   </section>
 
   <section aria-labelledby="faq">
-    <div><p class="eyebrow">Pertanyaan umum</p><h2 id="faq">Sebelum Anda pesan.</h2></div>
+    <div><p class="eyebrow">FAQ</p><h2 id="faq">Pertanyaan umum</h2></div>
     <div class="faq">
-      <details><summary>Harga Rp30.000 itu untuk berapa tas?</summary><p>Rp30.000 untuk satu tas, berlaku untuk semua motif. Tidak ada minimal order.</p></details>
-      <details><summary>Apakah tasnya benar-benar bisa dilipat?</summary><p>Ya. Tas bisa dilipat menjadi kecil sehingga mudah disimpan di tas, saku, atau kendaraan.</p></details>
-      <details><summary>Kuat untuk belanjaan berat?</summary><p>Ukurannya besar dan jahitannya rapi di bagian pegangan serta dasar, jadi kuat untuk belanja mingguan.</p></details>
-      <details><summary>Bisa dicuci?</summary><p>Bisa. Cuci dengan tangan atau mesin dengan putaran lembut, lalu jemur di tempat teduh agar warna motif tetap cerah.</p></details>
-      <details><summary>Pesan banyak untuk souvenir atau acara?</summary><p>Bisa. Chat kami via WhatsApp dengan jumlah dan tanggal yang dibutuhkan.</p></details>
+      <details><summary>Berapa harganya?</summary><p>Rp30.000/pcs untuk semua motif. Tanpa minimal order. Ongkir dihitung sesuai alamat Anda.</p></details>
+      <details><summary>Apakah benar bisa dilipat?</summary><p>Ya. Tas Belanja Lipat bisa dilipat kecil dan masuk saku atau tas.</p></details>
+      <details><summary>Apakah kuat untuk belanjaan banyak?</summary><p>Ya. Ukurannya besar dan jahitannya rapi di pegangan dan dasar tas.</p></details>
+      <details><summary>Apakah bisa dicuci?</summary><p>Bisa. Cuci dengan tangan atau mesin dengan putaran lembut, lalu jemur di tempat teduh.</p></details>
+      <details><summary>Bisa pesan banyak untuk souvenir atau acara?</summary><p>Bisa. Pesan via WhatsApp dan sebutkan jumlah serta tanggal yang dibutuhkan.</p></details>
     </div>
   </section>
 
   <div class="sunset-band" aria-hidden="true"></div>
   <footer>
-    <span>© 2026 Madebykain · Tas belanja lipat motif Nusantara</span>
+    <span>© 2026 Madebykain · Tas Belanja Lipat</span>
     <span>WhatsApp: <span class="sel">+62 813-1129-3656</span></span>
   </footer>
 </div>
 
 <div class="sticky">
-  <div><small style="color:var(--muted)">Hanya</small><br><b>Rp30.000</b></div>
-  <a class="btn btn-wa js-wa" data-msg="Halo, saya mau pesan tas belanja lipat motif Nusantara (Rp30.000/pcs)." href="#">Pesan via WhatsApp</a>
+  <div><small style="color:var(--muted)">Semua motif</small><br><b>Rp30.000/pcs</b></div>
+  <a class="btn btn-wa js-wa" data-msg="Halo Madebykain, saya mau pesan Tas Belanja Lipat (Rp30.000/pcs)." href="#"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>Pesan via WhatsApp</a>
 </div>
 
 <script>
@@ -313,7 +319,7 @@ qty.addEventListener("input", upd); upd();
 document.getElementById("orderForm").addEventListener("submit", e=>{
   e.preventDefault();
   const q=Math.max(1,parseInt(qty.value,10)||1);
-  const msg=["Halo, saya mau pesan tas belanja lipat.",
+  const msg=["Halo Madebykain, saya mau pesan Tas Belanja Lipat (Rp30.000/pcs).",
     "Nama: "+(document.getElementById("f-name").value||"-"),
     "Motif: "+document.getElementById("f-motif").value,
     "Jumlah: "+q+" pcs",
